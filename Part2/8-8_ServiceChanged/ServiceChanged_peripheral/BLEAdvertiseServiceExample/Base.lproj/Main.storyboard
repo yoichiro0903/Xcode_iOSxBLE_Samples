@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PY-fz-t12" customClass="BLECommonButton">
+                                <rect key="frame" x="180" y="240" width="240" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1GC-Rf-Fpk"/>
+                                    <constraint firstAttribute="width" constant="240" id="BqC-r8-6RA"/>
+                                    <constraint firstAttribute="height" constant="44" id="JtN-yS-9OH"/>
+                                    <constraint firstAttribute="height" constant="60" id="Kep-96-TSc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <state key="normal" title="ADVERTISE SERVICE1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1GC-Rf-Fpk"/>
+                                        <exclude reference="Kep-96-TSc"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="advertiseBtnTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Sfg-yW-VZf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9X-ou-1LM" customClass="BLECommonButton">
+                                <rect key="frame" x="180" y="316" width="240" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="95s-DN-eQ2"/>
+                                    <constraint firstAttribute="height" constant="60" id="Kek-xU-o0R"/>
+                                    <constraint firstAttribute="width" constant="240" id="Pyk-KT-RVq"/>
+                                    <constraint firstAttribute="width" constant="200" id="qB6-rb-fnd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <state key="normal" title="ADVERTISE SERVICE2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Kek-xU-o0R"/>
+                                        <exclude reference="qB6-rb-fnd"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="advertiseBtnTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nr6-hU-BLH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.4549019608" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="b9X-ou-1LM" firstAttribute="top" secondItem="5PY-fz-t12" secondAttribute="bottom" constant="32" id="TNV-Dd-nbE"/>
+                            <constraint firstAttribute="centerY" secondItem="5PY-fz-t12" secondAttribute="centerY" constant="38" id="Waz-bu-Gao"/>
+                            <constraint firstAttribute="centerX" secondItem="b9X-ou-1LM" secondAttribute="centerX" id="cQz-aR-eF5"/>
+                            <constraint firstAttribute="centerX" secondItem="5PY-fz-t12" secondAttribute="centerX" id="dgI-DY-jvQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A31659E1A2A7FAF009CB0EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A31659D1A2A7FAF009CB0EE /* main.m */; };
+		8A3165A11A2A7FAF009CB0EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3165A01A2A7FAF009CB0EE /* AppDelegate.m */; };
+		8A3165A41A2A7FAF009CB0EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3165A31A2A7FAF009CB0EE /* ViewController.m */; };
+		8A3165A71A2A7FAF009CB0EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3165A51A2A7FAF009CB0EE /* Main.storyboard */; };
+		8A3165AC1A2A7FAF009CB0EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3165AA1A2A7FAF009CB0EE /* LaunchScreen.xib */; };
+		8A684B2A1A74FF9A00B9CFB7 /* BLECommonButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A684B281A74FF9A00B9CFB7 /* BLECommonButton.m */; };
+		8A684B2B1A74FF9A00B9CFB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A684B291A74FF9A00B9CFB7 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A3165981A2A7FAF009CB0EE /* BLEMIDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEMIDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A31659C1A2A7FAF009CB0EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A31659D1A2A7FAF009CB0EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A31659F1A2A7FAF009CB0EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A3165A01A2A7FAF009CB0EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A3165A21A2A7FAF009CB0EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8A3165A31A2A7FAF009CB0EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8A3165A61A2A7FAF009CB0EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A3165AB1A2A7FAF009CB0EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8A684B261A74FF9A00B9CFB7 /* BLEAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEAppearance.h; sourceTree = "<group>"; };
+		8A684B271A74FF9A00B9CFB7 /* BLECommonButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLECommonButton.h; sourceTree = "<group>"; };
+		8A684B281A74FF9A00B9CFB7 /* BLECommonButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLECommonButton.m; sourceTree = "<group>"; };
+		8A684B291A74FF9A00B9CFB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A3165951A2A7FAF009CB0EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A31658F1A2A7FAF009CB0EE = {
+			isa = PBXGroup;
+			children = (
+				8A684B251A74FF9A00B9CFB7 /* Common */,
+				8A31659A1A2A7FAF009CB0EE /* BLEMIDI */,
+				8A31659B1A2A7FAF009CB0EE /* Supporting Files */,
+				8A3165991A2A7FAF009CB0EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A3165991A2A7FAF009CB0EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A3165981A2A7FAF009CB0EE /* BLEMIDI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A31659A1A2A7FAF009CB0EE /* BLEMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				8A3165A51A2A7FAF009CB0EE /* Main.storyboard */,
+				8A3165AA1A2A7FAF009CB0EE /* LaunchScreen.xib */,
+				8A31659F1A2A7FAF009CB0EE /* AppDelegate.h */,
+				8A3165A01A2A7FAF009CB0EE /* AppDelegate.m */,
+				8A3165A21A2A7FAF009CB0EE /* ViewController.h */,
+				8A3165A31A2A7FAF009CB0EE /* ViewController.m */,
+			);
+			path = BLEMIDI;
+			sourceTree = "<group>";
+		};
+		8A31659B1A2A7FAF009CB0EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A31659C1A2A7FAF009CB0EE /* Info.plist */,
+				8A31659D1A2A7FAF009CB0EE /* main.m */,
+			);
+			name = "Supporting Files";
+			path = BLEMIDI;
+			sourceTree = "<group>";
+		};
+		8A684B251A74FF9A00B9CFB7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8A684B261A74FF9A00B9CFB7 /* BLEAppearance.h */,
+				8A684B271A74FF9A00B9CFB7 /* BLECommonButton.h */,
+				8A684B281A74FF9A00B9CFB7 /* BLECommonButton.m */,
+				8A684B291A74FF9A00B9CFB7 /* Images.xcassets */,
+			);
+			name = Common;
+			path = ../../Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A3165971A2A7FAF009CB0EE /* BLEMIDI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3165BB1A2A7FAF009CB0EE /* Build configuration list for PBXNativeTarget "BLEMIDI" */;
+			buildPhases = (
+				8A3165941A2A7FAF009CB0EE /* Sources */,
+				8A3165951A2A7FAF009CB0EE /* Frameworks */,
+				8A3165961A2A7FAF009CB0EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEMIDI;
+			productName = BLEMIDI;
+			productReference = 8A3165981A2A7FAF009CB0EE /* BLEMIDI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A3165901A2A7FAF009CB0EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Shuichi Tsutsumi";
+				TargetAttributes = {
+					8A3165971A2A7FAF009CB0EE = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8A3165931A2A7FAF009CB0EE /* Build configuration list for PBXProject "BLEMIDI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A31658F1A2A7FAF009CB0EE;
+			productRefGroup = 8A3165991A2A7FAF009CB0EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A3165971A2A7FAF009CB0EE /* BLEMIDI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A3165961A2A7FAF009CB0EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A684B2B1A74FF9A00B9CFB7 /* Images.xcassets in Resources */,
+				8A3165A71A2A7FAF009CB0EE /* Main.storyboard in Resources */,
+				8A3165AC1A2A7FAF009CB0EE /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A3165941A2A7FAF009CB0EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A684B2A1A74FF9A00B9CFB7 /* BLECommonButton.m in Sources */,
+				8A3165A41A2A7FAF009CB0EE /* ViewController.m in Sources */,
+				8A3165A11A2A7FAF009CB0EE /* AppDelegate.m in Sources */,
+				8A31659E1A2A7FAF009CB0EE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A3165A51A2A7FAF009CB0EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3165A61A2A7FAF009CB0EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A3165AA1A2A7FAF009CB0EE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3165AB1A2A7FAF009CB0EE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A3165B91A2A7FAF009CB0EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A3165BA1A2A7FAF009CB0EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A3165BC1A2A7FAF009CB0EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = BLEMIDI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A3165BD1A2A7FAF009CB0EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = BLEMIDI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A3165931A2A7FAF009CB0EE /* Build configuration list for PBXProject "BLEMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3165B91A2A7FAF009CB0EE /* Debug */,
+				8A3165BA1A2A7FAF009CB0EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3165BB1A2A7FAF009CB0EE /* Build configuration list for PBXNativeTarget "BLEMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3165BC1A2A7FAF009CB0EE /* Debug */,
+				8A3165BD1A2A7FAF009CB0EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A3165901A2A7FAF009CB0EE /* Project object */;
+}

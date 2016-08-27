@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PY-fz-t12" customClass="BLECommonButton">
+                                <rect key="frame" x="180" y="202" width="240" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1GC-Rf-Fpk"/>
+                                    <constraint firstAttribute="height" constant="44" id="Kep-96-TSc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="START SCAN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanBtnTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M4S-DP-RRn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhz-rQ-uxe" customClass="BLECommonButton">
+                                <rect key="frame" x="180" y="354" width="240" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5nh-zU-qkX"/>
+                                    <constraint firstAttribute="width" constant="240" id="YfQ-ea-ERL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="WRITE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="writeBtnTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gxi-G3-sfK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLC-Vc-9HX" customClass="BLECommonButton">
+                                <rect key="frame" x="180" y="278" width="240" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8b6-ah-0oA"/>
+                                    <constraint firstAttribute="height" constant="44" id="tHJ-bc-0q6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="READ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readBtnTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rxe-Jv-AtC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.019607843137254902" green="0.43529411764705883" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fhz-rQ-uxe" secondAttribute="centerX" id="10G-En-jZW"/>
+                            <constraint firstAttribute="centerY" secondItem="5PY-fz-t12" secondAttribute="centerY" constant="60" id="Waz-bu-Gao"/>
+                            <constraint firstAttribute="centerY" secondItem="wLC-Vc-9HX" secondAttribute="centerY" id="cOT-ja-h8N"/>
+                            <constraint firstAttribute="centerX" secondItem="5PY-fz-t12" secondAttribute="centerX" id="dgI-DY-jvQ"/>
+                            <constraint firstItem="wLC-Vc-9HX" firstAttribute="top" secondItem="5PY-fz-t12" secondAttribute="bottom" constant="32" id="fmz-E3-QcU"/>
+                            <constraint firstItem="fhz-rQ-uxe" firstAttribute="top" secondItem="wLC-Vc-9HX" secondAttribute="bottom" constant="32" id="hiI-JG-Pit"/>
+                            <constraint firstAttribute="centerX" secondItem="wLC-Vc-9HX" secondAttribute="centerX" id="yHf-Gg-z8L"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Waz-bu-Gao"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

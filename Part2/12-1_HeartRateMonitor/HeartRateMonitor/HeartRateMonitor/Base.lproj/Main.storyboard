@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Human" translatesAutoresizingMaskIntoConstraints="NO" id="7vJ-7B-dCF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="vVh-0x-g1e">
+                                <rect key="frame" x="227" y="209" width="170" height="161"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdW-eZ-0rB">
+                                <rect key="frame" x="16" y="32" width="57.5" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="32"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="bpm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1da-dK-jYH">
+                                <rect key="frame" x="81" y="46" width="35" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7vJ-7B-dCF" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="4UC-9a-lNw"/>
+                            <constraint firstItem="MdW-eZ-0rB" firstAttribute="bottom" secondItem="1da-dK-jYH" secondAttribute="bottom" constant="8" id="7Gs-hU-R4q"/>
+                            <constraint firstItem="MdW-eZ-0rB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="J5J-Ao-f09"/>
+                            <constraint firstItem="MdW-eZ-0rB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="32" id="P1A-gc-aGN"/>
+                            <constraint firstItem="1da-dK-jYH" firstAttribute="leading" secondItem="MdW-eZ-0rB" secondAttribute="trailing" constant="8" id="dcS-V7-lGn"/>
+                            <constraint firstItem="vVh-0x-g1e" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="189" id="lZ7-D8-TqB"/>
+                            <constraint firstAttribute="centerX" secondItem="vVh-0x-g1e" secondAttribute="centerX" constant="-12" id="mll-FI-OeT"/>
+                            <constraint firstAttribute="centerX" secondItem="7vJ-7B-dCF" secondAttribute="centerX" id="puH-m8-gAd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bpmLabel" destination="MdW-eZ-0rB" id="7Fk-qr-fS0"/>
+                        <outlet property="heartImageView" destination="vVh-0x-g1e" id="QIr-pV-Sdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Heart" width="170" height="161"/>
+        <image name="Human" width="600" height="800"/>
+    </resources>
+</document>

@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  ANCSClient
+//
+//  Created by Shuichi Tsutsumi on 2014/12/04.
+//  Copyright (c) 2014年 Shuichi Tsutsumi. All rights reserved.
+//
+
+#ifndef ANCSClient_PrefixHeader_pch
+#define ANCSClient_PrefixHeader_pch
+
+#ifdef DEBUG
+#  define LOG(...) NSLog(__VA_ARGS__)
+#  define LOG_CURRENT_METHOD NSLog(@"%@/%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd))
+#else
+#  define LOG(...) ;
+#  define LOG_CURRENT_METHOD ;
+#endif
+
+#ifdef DEBUG
+# define NSLog(...) NSLog(__VA_ARGS__)
+#else
+# define NSLog(...) {}
+#endif
+
+#define Defaults [NSUserDefaults standardUserDefaults]
+
+#endif

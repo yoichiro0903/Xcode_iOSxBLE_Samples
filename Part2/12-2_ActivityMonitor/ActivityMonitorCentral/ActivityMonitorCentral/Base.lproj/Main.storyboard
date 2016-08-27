@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lav-Ry-ko2" customClass="JBLineChartView">
+                                <rect key="frame" x="16" y="178" width="568" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="Zhb-gq-PO1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Monitor Central" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LP7-pQ-CkN">
+                                <rect key="frame" x="16" y="28" width="174.5" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歩数グラフ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbz-9D-bD8">
+                                <rect key="frame" x="260" y="140" width="80" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7q-et-U17">
+                                <rect key="frame" x="283" y="450" width="33.5" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7j-h4-ZlE">
+                                <rect key="frame" x="283" y="480" width="33" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.4549019608" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Lav-Ry-ko2" secondAttribute="trailing" constant="16" id="14z-GA-i1P"/>
+                            <constraint firstItem="h7j-h4-ZlE" firstAttribute="top" secondItem="y7q-et-U17" secondAttribute="bottom" constant="8" id="1fn-OT-RUU"/>
+                            <constraint firstAttribute="centerY" secondItem="Lav-Ry-ko2" secondAttribute="centerY" constant="18" id="5c7-aE-DNr"/>
+                            <constraint firstAttribute="centerX" secondItem="y7q-et-U17" secondAttribute="centerX" id="REO-JU-emc"/>
+                            <constraint firstItem="y7q-et-U17" firstAttribute="top" secondItem="Lav-Ry-ko2" secondAttribute="bottom" constant="16" id="V8t-3m-8uU"/>
+                            <constraint firstItem="Lav-Ry-ko2" firstAttribute="top" secondItem="LP7-pQ-CkN" secondAttribute="bottom" constant="128" id="bO1-fI-Ucc"/>
+                            <constraint firstItem="Lav-Ry-ko2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="fB6-1M-uId"/>
+                            <constraint firstItem="LP7-pQ-CkN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="fzb-Wc-7aD"/>
+                            <constraint firstAttribute="centerX" secondItem="h7j-h4-ZlE" secondAttribute="centerX" id="gHD-LK-kod"/>
+                            <constraint firstAttribute="centerX" secondItem="Qbz-9D-bD8" secondAttribute="centerX" id="lz2-SM-vLZ"/>
+                            <constraint firstItem="Lav-Ry-ko2" firstAttribute="top" secondItem="Qbz-9D-bD8" secondAttribute="bottom" constant="16" id="oKu-3y-zdq"/>
+                            <constraint firstItem="LP7-pQ-CkN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="r1o-yO-xel"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Lav-Ry-ko2" secondAttribute="bottom" id="uOW-Bl-R4g"/>
+                            <constraint firstItem="Lav-Ry-ko2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="zpd-UF-F5K"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5c7-aE-DNr"/>
+                                <exclude reference="fB6-1M-uId"/>
+                                <exclude reference="uOW-Bl-R4g"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="h7j-h4-ZlE" id="AWb-yM-a3Z"/>
+                        <outlet property="dateLabel" destination="y7q-et-U17" id="KC6-vc-wWr"/>
+                        <outlet property="lineChartView" destination="Lav-Ry-ko2" id="SCE-Of-1Nh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
